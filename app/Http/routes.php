@@ -10,22 +10,16 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+Route::get('/', function() {
+    return redirect('auth/login');
+});
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
-
-// Authentication routes...
-Route::get('/', 'Auth\AuthController@getLogin');
-Route::get('home', function() {
+Route::get('home', ['middleware' => 'auth', function() {
     return view('home');
-});
-//Route::post('login', 'Auth\AuthController@postLogin');
-Route::post('login', function() {
-    return redirect('home');
-});
-Route::get('logout', 'Auth\AuthController@getLogout');
+}]);
 
-// Registration routes...
-Route::get('register', 'Auth\AuthController@getRegister');
-Route::post('register', 'Auth\AuthController@postRegister');
+Route::controller('auth', 'Auth\AuthController');
+Route::controller('user', 'UserController');
+Route::controller('supplier', 'SupplierController');
+Route::controller('warna', 'WarnaController');
+Route::controller('produk', 'ProdukController');

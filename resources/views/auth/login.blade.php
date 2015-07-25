@@ -28,21 +28,21 @@
             <div class="login-box-body">
                 <p class="login-box-msg">Sign in to start your session</p>
                 <!--<form action="{{ url('login') }}" method="post">-->
-                <form action="{{ url('login') }}" method="post">
+                <form action="{{ url('/auth/login') }}" method="post">
                     {!! csrf_field() !!}
                     <div class="form-group has-feedback">
-                        <input type="email" class="form-control" placeholder="Email"/>
+                        <input name="email" type="email" class="form-control" placeholder="Email" value="{{ old('email') }}"/>
                         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                     </div>
                     <div class="form-group has-feedback">
-                        <input type="password" class="form-control" placeholder="Password"/>
+                        <input name="password" type="password" class="form-control" placeholder="Password"/>
                         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                     </div>
                     <div class="row">
                         <div class="col-xs-8">    
                             <div class="checkbox icheck">
                                 <label>
-                                    <input type="checkbox"> Remember Me
+                                    <input type="checkbox" name="remember"> Remember Me
                                 </label>
                             </div>                        
                         </div><!-- /.col -->

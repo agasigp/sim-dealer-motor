@@ -4,17 +4,16 @@
 @include('templates.sidebar')
 
 @section('content')
-<div class="box box-solid box-primary">
-    <div class="box-header with-border">
-        <h3 class="box-title">Default Box Example</h3>
-        <div class="box-tools pull-right">
-            <!-- Buttons, labels, and many other things can be placed here! -->
-            <!-- Here is a label for example -->
-            <span class="label label-primary">Label</span>
-        </div><!-- /.box-tools -->
-    </div><!-- /.box-header -->
-    <div class="box-body">
-        The body of the box
-    </div><!-- /.box-body -->
-</div><!-- /.box -->
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1 id="page-header">
+        Halaman Utama
+    </h1>
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <!-- Your Page Content Here -->
+    <h4>Selamat datang di Halaman Utama! Silahkan pilih menu di sebelah kiri untuk menggunakan aplikasi.</h4>
+</section><!-- /.content -->
 @endsection

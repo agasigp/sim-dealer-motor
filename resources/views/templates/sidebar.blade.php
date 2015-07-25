@@ -8,12 +8,10 @@
             <!-- Sidebar user panel (optional) -->
             <div class="user-panel">
                 <div class="pull-left image">
-                    <img src="{{ url('dist/img/user2-160x160.jpg') }}" class="img-circle" alt="User Image" />
+                    <img src="{{ asset('dist/img/user2-160x160.jpg') }}" class="img-circle" alt="User Image" />
                 </div>
                 <div class="pull-left info">
                     <p>Alexander Pierce</p>
-                    <!-- Status -->
-                    <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                 </div>
             </div>
 
@@ -30,15 +28,17 @@
 
             <!-- Sidebar Menu -->
             <ul class="sidebar-menu">
-                <li class="header">HEADER</li>
+                <li class="header">Menu Utama</li>
                 <!-- Optionally, you can add icons to the links -->
-                <li class="active"><a href="#"><i class='fa fa-link'></i> <span>Link</span></a></li>
-                <li><a href="#"><i class='fa fa-link'></i> <span>Another Link</span></a></li>
+<!--                <li class="active"><a href="#"><i class='fa fa-link'></i> <span>Link</span></a></li>
+                <li><a href="#"><i class='fa fa-link'></i> <span>Another Link</span></a></li>-->
                 <li class="treeview">
-                    <a href="#"><i class='fa fa-link'></i> <span>Multilevel</span> <i class="fa fa-angle-left pull-right"></i></a>
+                    <a href="#"><i class='fa fa-link'></i> <span>Data Master</span> <i class="fa fa-angle-left pull-right"></i></a>
                     <ul class="treeview-menu">
-                        <li><a href="#">Link in level 2</a></li>
-                        <li><a href="#">Link in level 2</a></li>
+                        <li><a href="#" onclick="load_content('{{ url('user/list') }}', 'User')">User</a></li>
+                        <li><a href="#" onclick="load_content('{{ url('supplier/list') }}', 'Supplier')">Supplier</a></li>
+                        <li><a href="#" onclick="load_content('{{ url('warna/list') }}', 'Warna')">Warna</a></li>
+                        <li><a href="#" onclick="load_content('{{ url('produk/list') }}', 'Produk')">Produk</a></li>
                     </ul>
                 </li>
             </ul><!-- /.sidebar-menu -->
