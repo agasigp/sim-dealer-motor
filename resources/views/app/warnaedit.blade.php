@@ -12,7 +12,7 @@
                 <div class="box-body">
                     <div class="form-group">
                         <label for="name">Nama Warna</label>
-                        <input type="text" name="warna" class="form-control" value="{{ $warna->warna }}">
+                        <input type="text" name="warna" class="form-control" value="{{ $warna->warna }}" required>
                     </div>
 
                 </div><!-- /.box-body -->

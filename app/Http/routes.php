@@ -23,3 +23,7 @@ Route::controller('user', 'UserController');
 Route::controller('supplier', 'SupplierController');
 Route::controller('warna', 'WarnaController');
 Route::controller('produk', 'ProdukController');
+
+Route::controller('pembelian', 'PembelianController');
+Route::controller('penjualan', 'PenjualanController');
+Route::controller('laporan', 'LaporanController');

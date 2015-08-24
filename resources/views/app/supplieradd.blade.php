@@ -11,11 +11,11 @@
                 <div class="box-body">
                     <div class="form-group">
                         <label for="name">Nama Supplier</label>
-                        <input type="text" name="nama" class="form-control" value="{{ old('nama') }}">
+                        <input type="text" name="nama" class="form-control" value="{{ old('nama') }}" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Alamat</label>
-                        <input type="text" name="alamat" class="form-control" value="{{ old('alamat') }}">
+                        <input type="text" name="alamat" class="form-control" value="{{ old('alamat') }}" required>
                 </div><!-- /.box-body -->
 
                 <div class="box-footer">

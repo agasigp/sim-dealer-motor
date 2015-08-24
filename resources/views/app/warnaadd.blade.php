@@ -11,7 +11,7 @@
                 <div class="box-body">
                     <div class="form-group">
                         <label for="warna">Warna</label>
-                        <input type="text" name="warna" class="form-control" value="{{ old('warna') }}">
+                        <input type="text" name="warna" class="form-control" value="{{ old('warna') }}" required>
                     </div>
                     </div><!-- /.box-body -->
 

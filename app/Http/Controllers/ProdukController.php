@@ -25,12 +25,13 @@ class ProdukController extends Controller {
 
     public function postAdd(Request $request)
     {
-        $produk           = new Produk;
-        $produk->id_warna = $request->input('warna');
-        $produk->tipe     = $request->input('tipe');
-        $produk->nama     = $request->input('nama');
-        $produk->harga    = $request->input('harga');
-        $produk->stok     = $request->input('stok');
+        $produk             = new Produk;
+        $produk->id_warna   = $request->input('warna');
+        $produk->tipe       = $request->input('tipe');
+        $produk->nama       = $request->input('nama');
+        $produk->harga_beli = $request->input('harga_beli');
+        $produk->harga_jual = $request->input('harga_jual');
+        $produk->stok       = $request->input('stok');
 //        dd($request->input('warna'));
         $produk->save();
 
@@ -47,12 +48,13 @@ class ProdukController extends Controller {
 
     public function postEdit(Request $request)
     {
-        $produk           = Produk::find($request->input('id'));
-        $produk->id_warna = $request->input('warna');
-        $produk->tipe     = $request->input('tipe');
-        $produk->nama     = $request->input('nama');
-        $produk->harga    = $request->input('harga');
-        $produk->stok     = $request->input('stok');
+        $produk             = Produk::find($request->input('id'));
+        $produk->id_warna   = $request->input('warna');
+        $produk->tipe       = $request->input('tipe');
+        $produk->nama       = $request->input('nama');
+        $produk->harga_beli = $request->input('harga_beli');
+        $produk->harga_jual = $request->input('harga_jual');
+        $produk->stok       = $request->input('stok');
         $produk->save();
 
         return "Success";

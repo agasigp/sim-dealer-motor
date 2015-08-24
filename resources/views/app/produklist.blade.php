@@ -14,7 +14,8 @@
                             <th>Tipe</th>
                             <th>Nama</th>
                             <th>Stok</th>
-                            <th>Harga</th>
+                            <th>Harga Beli</th>
+                            <th>Harga Jual</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
@@ -24,7 +25,8 @@
                             <td>{{ $produk->tipe }}</td>
                             <td>{{ $produk->nama }}</td>
                             <td>{{ $produk->stok }}</td>
-                            <td>{{ $produk->harga }}</td>
+                            <td>{{ $produk->harga_beli }}</td>
+                            <td>{{ $produk->harga_jual }}</td>
                             <td>
                                 <a href="#" onclick="load_content('{{ url('produk/edit/'.$produk->id_produk) }}', 'Produk')"><span class="glyphicon glyphicon-edit"></span></a> |
                                 <a href="#"><span class="glyphicon glyphicon-remove"></span></a>

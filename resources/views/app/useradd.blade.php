@@ -11,11 +11,11 @@
                 <div class="box-body">
                     <div class="form-group">
                         <label for="name">Nama</label>
-                        <input type="text" name="name" class="form-control" value="{{ old('name') }}">
+                        <input type="text" name="name" class="form-control" value="{{ old('name') }}" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" name="email" class="form-control" value="{{ old('email') }}">
+                        <input type="email" name="email" class="form-control" value="{{ old('email') }}" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Group</label>
@@ -27,11 +27,11 @@
                     </div>
                     <div class="form-group">
                         <label for="gaji_pokok">Gaji Pokok</label>
-                        <input type="number" name="gaji_pokok" class="form-control" value="{{ old('gaji_pokok') }}">
+                        <input type="number" name="gaji_pokok" class="form-control" value="{{ old('gaji_pokok') }}" min="0"required>
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <input type="password" name="password" class="form-control" value="{{ old('password') }}">
+                        <input type="password" name="password" class="form-control" value="{{ old('password') }}" required>
                     </div>
                 </div><!-- /.box-body -->
 

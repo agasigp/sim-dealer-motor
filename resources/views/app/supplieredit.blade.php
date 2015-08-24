@@ -12,11 +12,11 @@
                 <div class="box-body">
                     <div class="form-group">
                         <label for="name">Nama Supplier</label>
-                        <input type="text" name="nama" class="form-control" value="{{ $supplier->supplier }}">
+                        <input type="text" name="nama" class="form-control" value="{{ $supplier->supplier }}" required>
                     </div>
                     <div class="form-group">
                         <label for="alamat">Alamat</label>
-                        <input type="text" name="alamat" class="form-control" value="{{ $supplier->alamat }}">
+                        <input type="text" name="alamat" class="form-control" value="{{ $supplier->alamat }}" required>
                     </div>
                 </div><!-- /.box-body -->
 
